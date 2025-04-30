@@ -5,19 +5,19 @@
 ### 🚀 Features
 
 - **🔧 Explain Diagnostic Trouble Codes (DTCs)**  
-  Users can input codes like P0420 or P0171 and receive simple explanations with suggested actions.
+  Users can input codes like P0420 or P0171 and receive simple explanations with suggested actions, referencing internal data and public automotive sources.
 
 - **📑 Summarize Maintenance Reports**  
   Users can paste service reports or error descriptions and AutoAura summarizes the content using generative AI.
 
 - **🛠 Predictive Maintenance Suggestions**  
-  Based on mileage, last service date, and model, AutoAura proactively recommends likely maintenance needs.
+  Based on mileage, last service date, and vehicle model, AutoAura proactively recommends likely maintenance needs.
 
 - **📅 Book Service Appointments**  
-  AutoAura interacts with users to schedule appointments using Microsoft 365 calendar integration (optional Power Automate or Outlook plugin).
+  AutoAura interacts with users to schedule appointments using Microsoft 365 calendar integration (via Outlook or Power Automate).
 
 - **📚 Document Intelligence**  
-  The agent is connected to public car manuals and TSBs using Copilot Studio’s generative answers from uploaded content.
+  The agent is connected to car manuals, diagnostic codes, and TSBs using Copilot Studio’s generative answers from uploaded content and online sources.
 
 ### 🧠 Built Using
 
@@ -26,3 +26,19 @@
 
 This project demonstrates a real-world vertical application of Microsoft Copilot technology in the automotive domain — with no external code — ready to scale across service centers or consumer apps.
 
+---
+
+## 🌐 Public Automotive Knowledge Sources
+
+AutoAura references publicly accessible vehicle data resources to enhance accuracy and support:
+
+- [RepairPal – Common Car Problems](https://repairpal.com/problems)
+- [CarMD – Diagnostic Data & Repair Info](https://www.carmd.com/wp/garage/)
+- [NHTSA – Vehicle Recalls & Safety Issues](https://www.nhtsa.gov/recalls)
+- [OBD-Codes – Trouble Code Definitions](https://www.obd-codes.com/trouble_codes/)
+
+---
+
+## 📁 Knowledge Base
+
+All supporting documents (sample DTC dataset, architecture diagram, service manuals, and topic definitions) are included in the [`knowledgebase/`](./knowledgebase) folder for reference.
